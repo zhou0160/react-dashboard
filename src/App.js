@@ -184,7 +184,7 @@ class App extends React.Component{
     }
 
     return (
-      <Router className="App" basename="/syntronic-frontend-dashbord">
+      <Router className="App" basename="/react-dashboard">
         <Header settingsOnSelect={this.settingsOnSelect}/>
         <Switch>
         {/* <Route path="/resetPassword">

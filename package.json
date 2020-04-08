@@ -2,7 +2,7 @@
   "name": "dashboard",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://zhou0160.github.io/syntronic-frontend-dashbord/",
+  "homepage": "https://zhou0160.github.io/react-dashboard/",
   "dependencies": {
     "@material-ui/core": "^4.9.3",
     "@testing-library/jest-dom": "^4.2.4",
