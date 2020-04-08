@@ -1,0 +1,679 @@
+body,p{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: rgb(252,252,252);
+}
+
+/*********** Log in Page **************/
+
+.loginPage{
+  background-image: url('./image/Back.png');
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginForm, .forgerPasswordForm{
+  background-color: white;
+  height: 40rem;
+  width: 30rem;
+  border-radius: 8px;
+  box-shadow: 3px 3px 22px rgba(0, 0, 0, 0.17);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.forgerPasswordForm{
+  height: 35rem;
+}
+
+.loginLogo{
+  width: 45%;
+}
+
+.loginInputs, .forgerPasswordInputs{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 10rem;
+  justify-content: space-between;
+}
+
+.forgerPasswordInputs{
+  height: 10rem;
+  justify-content: center;
+}
+
+.forgerPasswordInputs input{
+  margin-top: 1rem;
+}
+
+.forgerPasswordInputs p{
+  font-size: 1rem;
+  color: #187FC0;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.loginInputs input, .forgerPasswordInputs input{
+  padding: 5px 10px;
+  font-size: 1rem;
+  border: 0;
+  border-bottom: 2px solid rgb(150, 150, 150);
+  transition: 0.5s all linear;
+  background-color: none;
+}
+
+.loginInputs input:focus, .forgerPasswordInputs input:focus{
+  outline: none;
+  color: #187FC0;
+  border-bottom: 2px solid #187FC0;
+  transition: 0.5s all linear;
+  background-color: rgba(24, 128, 192, 0.04);
+}
+
+.loginPasswordDiv{
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.loginPassword{
+  width: 100%;
+}
+
+.toggleHidePasswordBtn{
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
+  font-size: 1rem;
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(24, 128, 192, 0);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.toggleHidePasswordBtn:hover{
+  text-decoration: none;
+
+}
+
+.loginActions{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.loginActions p {
+  align-self: flex-end;
+  margin-top: 1rem;
+  color: #187FC0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+label{
+  margin-bottom: 0 !important;
+  padding: 0;
+}
+
+.loginBtn{
+  background-color: #187FC0;
+  color: white;
+  padding: 10px;
+  font-size: 1.2rem;
+  width: 100%;
+  transition: 0.2s all linear;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.loginBtn:focus{
+  text-decoration: none;
+  color: white;
+  outline: none;
+  background-color:#187FC0;
+  box-shadow:none;
+}
+
+.loginBtn:active{
+  text-decoration: none;
+  color: white;
+  background-color: rgb(43, 149, 215);
+  box-shadow:none;
+}
+
+.loginBtn:hover{
+  text-decoration: none;
+  color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.228);
+}
+
+.renmenberDiv{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.renmenberDiv input{
+  margin-right: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+.renmenberDiv p{
+  color: gray;
+}
+
+/**********    Header    *********/
+
+header{
+  height: 3.5rem;
+  background-color: white;
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  box-shadow: 3px 0px 22px rgba(0, 0, 0, 0.07);
+}
+
+header p {
+  margin-right: 1rem;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.logo{
+  width: 8rem;
+  margin: 0 1rem 0 0.2rem;
+}
+
+.user{
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.rs-dropdown-toggle-caret{
+  top: 32%;
+}
+
+#headerDiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header form{
+  margin: 0 0.5rem;
+}
+
+.userSettings{
+  position: absolute;
+
+}
+
+/**********    Summery    *********/
+
+.summery{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin: 1rem;
+  height: 7rem;
+  background-color: white;
+  box-shadow: 3px 0px 22px rgba(0, 0, 0, 0.07);
+}
+
+.summery img {
+  margin-right: 5px;
+  width: 1rem;
+}
+
+.sumLable{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.sumLable div{
+  display: flex;
+  margin-left: 3rem;
+}
+
+.checkOut{
+  margin-bottom: 1.5rem;
+  margin-top: 0.3rem;
+  color: rgb(156, 156, 156);
+  font-size: 14px;
+}
+
+.checkIn p {
+  color: green;
+  font-size: 14px;
+}
+
+.dataContener{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.dataContent{
+  border-left: 1px solid rgb(218, 218, 218);
+  padding-left: 3rem;
+}
+
+.checkoutData{
+  color: rgb(156, 156, 156);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.checkinData{
+  color: rgb(50, 69, 99);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.dataLabel{
+  color: rgb(194, 194, 194);
+  font-size: 14px;
+}
+
+/**********    Visit List    *********/
+
+/*  Filter  */
+
+
+.filterButton{
+  background-color: rgb(20,120,199) !important;
+  border: 0;
+  color: white;
+  padding: 5px 1rem;
+  font-size: 0.9rem;
+  min-width: 5rem;
+  margin-right: 10px;
+}
+
+.filterHeader>button{
+  background-color: rgb(244,243,247) ;
+}
+
+.ListFilter{
+  margin: 0 1rem;
+  padding: 0 1rem;
+  background-color: rgb(244,243,247) ;
+}
+
+.filterHeader{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.8rem 0;
+  background-color: rgb(244,243,247) ;
+}
+
+.filter{
+  padding: 1rem 0.5rem;
+}
+
+.filter p {
+  font-weight: 700;
+  /* font-size: 1rem; */
+}
+
+.filterPurose,.filterTime,.filterStatus{
+  display: flex;
+  align-items: center;
+}
+.filterForm{
+  display: flex;
+  justify-content: space-between;
+  height: 4.3rem;
+  /* background-color: #187FC0; */
+}
+.filterLeft{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  /* background-color: aqua; */
+}
+
+.filterLeft p {
+  width: 5rem;
+}
+
+.filterForm .rs-checkbox-wrapper{
+  top: 0;
+  background-color: white;
+}
+
+.filterForm .rs-checkbox-checker{
+  padding-top: 0;
+  padding-bottom: 0;
+  min-height:0;
+}
+
+.filterForm .rs-checkbox.rs-checkbox-inline:nth-child(1) .rs-checkbox-checker{
+  padding-left: 26px;
+}
+
+.filterForm .rs-checkbox.rs-checkbox-inline:nth-child(1) .rs-checkbox-wrapper{
+  left: 0;
+}
+
+.filterStatus{
+  align-items: flex-start;
+}
+
+.filterStatus>p{
+  margin-right: 1rem;
+}
+
+.filterButtons{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.filterButtons button{
+  padding: 7px 1.6rem;
+  border-radius: 0;
+}
+
+.rs-btn-primary{
+  border-radius: 0;
+  background-color: #187FC0;
+  margin-left: 1rem;
+}
+
+.filterStatus>div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.filterStatus>div>div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.rs-btn-toggle{
+  margin-left: 1rem;
+}
+
+.checkBoxStatus{
+  display: flex;
+  align-items: center;
+}
+
+.checkOutButtonActive{
+  background-color: rgb(20,120,199);
+  border: 0;
+  color: white;
+  padding: 5px 1rem;
+  font-size: 1rem;
+
+}
+
+.checkOutButton{
+  cursor: pointer;
+  background-color:#C4C4C4;
+  border: 0;
+  color: white;
+  padding: 5px 1rem;
+  font-size: 1rem;
+}
+
+.checkOutActions{
+  padding: 15px;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #F0F3F7;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 3px 22px rgba(0, 0, 0, 0.07);
+}
+
+.checkOutActions p {
+  cursor: pointer;
+  margin-top: 1rem;
+  color: #187FC0;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1rem;
+
+}
+
+.visitListTable{
+  margin: 0rem 1rem;
+  height: calc(100% - 268.11px) !important;
+  background-color: white;
+  box-shadow: 3px 0px 22px rgba(0, 0, 0, 0.07);
+  transition: height 0.5s linear;
+}
+
+.visitListTable.withFilterWindowClose{
+  height: calc(100% - 118.472px) !important;
+}
+
+.rs-table-body-row-wrapper{
+  height: 100% !important;
+}
+
+.rs-input-group.rs-input-group-inside{
+  height: 1.9rem;
+  margin-right: 0.8rem;
+}
+
+.rs-input{
+  height: 1.9rem;
+}
+.rs-icon.rs-icon-search{
+  position: relative;
+  bottom: 3.5px;
+}
+
+/*  Header  */
+
+
+/*  Change Password  */
+
+.rs-modal-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rs-modal{
+  position: relative;
+  bottom: 2rem;
+}
+
+/*  Visit  */
+
+
+.rs-icon.infoIcon{
+  color: #187FC0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.rs-table-cell-header .rs-table-cell-content{
+  font-weight: 700;
+  color: rgb(69, 69, 69);
+  font-size: 14px;
+}
+
+
+.list{
+  margin: 1rem;
+}
+
+.rs-table-cell-content{
+  display: flex;
+  align-items: center;
+}
+
+#visitList{
+  height: calc(100vh - 262.2px);
+}
+
+.nameCircle{
+  width: 38px;
+  height: 38px;
+  background-color: lavender;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal */
+
+.yesModalBtn{
+  background-color: rgb(20,120,199);
+  border: 0;
+  color: white;
+  padding: 5px 1rem;
+  font-size: 0.9rem;
+  margin:5px;
+}
+
+.cancelModalBtn{
+  border: 0;
+  color: rgb(20,120,199);
+  padding: 5px 1rem;
+  font-size: 0.9rem;
+  margin:5px;
+}
+
+.infoText{
+  font-size: 16px;
+}
+
+
+
+/*************   Media    ***************/
+
+@media (min-width: 1500px){
+  .filterForm{
+    height: auto;
+  }
+  .filterLeft{
+    flex-direction: row;
+  }
+  .filterTime{
+    margin-left: 6vw;
+  }
+  .filterStatus{
+    align-items: center;
+  }
+  .filterStatus>p {
+    width: 5rem;
+    margin: 0;
+  }
+  .filterStatus>div{
+    flex-direction: row;
+    align-items: center;
+  }
+  .filterStatus>div>div{
+    margin-right: 1rem;
+    align-items: center;
+  }
+
+  .visitListTable{
+    height: calc(100% - 234.186px) !important;
+  }
+}
+
+
+@media (max-width: 850px) {
+  .filterForm{
+    flex-direction: column;
+    height: auto;
+  }
+  .filterStatus{
+    align-items: center;
+  }
+  .filterStatus>p {
+    width: 5rem;
+    margin: 0;
+  }
+  .filterStatus>div{
+    flex-direction: row;
+    align-items: center;
+  }
+  .filterStatus>div>div{
+    margin-right: 1rem;
+    align-items: center;
+
+  }
+  .filterPurose, .filterTime, .filterStatus{
+    margin: 0.6rem 0;
+  }
+
+  .summery{
+    height: auto;
+    padding: 1rem 0;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .summery>div{
+    margin: 1rem 0 1rem 1rem;
+  }
+
+  #visitList{
+    height: calc(100vh - 406.554px) !important;
+  }
+
+  .visitListTable{
+    height: calc(100% - 334.568px) !important;
+  }
+
+}
+
+@media (max-width: 650px) {
+  .filterStatus{
+    align-items: flex-start;
+  }
+
+  .filterStatus>div{
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    height: 3.5rem;
+  }
+
+  .filterStatus>div>div{
+    justify-content: space-between;
+  }
+  .filterStatus>div>div p{
+    margin-right: 1rem;
+  }
+  .visitListTable{
+    height: calc(100% - 366.884px) !important;
+  }
+}
